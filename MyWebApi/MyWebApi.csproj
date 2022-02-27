@@ -1,19 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.43.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.43.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Protobuf Include="..\greet.proto" GrpcServices="Client">
-      <Link>Protos\greet.proto</Link>
-    </Protobuf>
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\GrpcGeneratedCode\GrpcGeneratedCode.csproj" />
+		<ProjectReference Include="..\MyGrpcService\MyGrpcService.csproj" />
+	</ItemGroup>
 
 </Project>

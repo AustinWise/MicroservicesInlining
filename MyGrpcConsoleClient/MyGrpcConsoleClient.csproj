@@ -17,9 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Protobuf Include="..\greet.proto" GrpcServices="Client">
-			<Link>Protos\greet.proto</Link>
-		</Protobuf>
+	  <ProjectReference Include="..\GrpcGeneratedCode\GrpcGeneratedCode.csproj" />
 	</ItemGroup>
 
 </Project>
