@@ -15,7 +15,7 @@ Connections between components are subject to service discovery and timeouts,
 instead of simple method calls.
 
 In cases where have separate microservices no longer makes sense, this project
-aims to look at ways to get the benefits of a monolith with our radically
+aims to look at ways to get the benefits of a monolith without radically
 rearchitecturing an application.
 
 ## Microservices Inline
